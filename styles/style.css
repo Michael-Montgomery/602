@@ -1,0 +1,390 @@
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    padding-left: 0;
+}
+
+h2 {
+    font-weight: bolder;
+}
+
+* {
+    transition: all .4s ease;
+    font-family: 'Gruppo', cursive;
+}
+
+.page-wrapper {
+    z-index: 1;
+}
+
+#welcome-pic{
+    width: 100%;
+    height:calc(100vh - 70px);
+    background-image: url('https://skyhouseorlando.com/assets/images/cache/Skyhouse-Orlando-Pool-1953-Web-89538a007c6f57757a1453c70f5bb656.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    /* filter: grayscale(100%); */
+}
+
+.fixed {
+    position: fixed;
+    top:0; left:0;
+    width: 100%; 
+    background-color: black;
+    color: white;
+    -webkit-box-shadow: 0px 50px 50px -7px rgba(0,0,0,0.24); 
+box-shadow: 0px 50px 50px -7px rgba(0,0,0,0.24);
+}
+
+header {
+    height: 70px;
+}
+
+header nav {
+    text-align: center;
+    line-height: 70px;
+}
+
+header nav a {
+    font-size: 1.5em;
+    text-decoration: none;
+    margin: 0 5vw;
+    color: black;
+    transition: all .1s;
+    padding-bottom: 4px;
+}
+
+header nav a img {
+    height: 60px;
+    transition: all .1s;
+}
+
+header nav a:first-child {
+    float: left;
+    display: none;
+}
+
+header nav a:hover {
+    border-bottom: 2px solid black;
+    
+}
+
+#about-wrapper {
+    padding-top: 100px;
+}
+
+#headshot-wrapper {
+    margin: 0 auto;
+    border: 1px solid black;
+    height: 250px;
+    width: 250px;
+    background-image:url('https://images.pexels.com/photos/7148417/pexels-photo-7148417.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-size: cover;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 48px 20px rgba(0,0,0,0.27); 
+box-shadow: 0px 0px 48px 20px rgba(0,0,0,0.27);
+}
+
+/* Name span */
+
+#about-wrapper h2 {
+    font-size: 2em;
+    text-align: center;
+}
+
+#about-wrapper p {
+    font-size: 1.3em;
+    
+}
+
+#about-wrapper a {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    transform: rotate(-90deg);
+    transition: border-bottom .1s;
+}
+
+#about-wrapper a:hover {
+    background-color: white;
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+#about-bio-wrapper {
+    width: 90vw;
+    margin: auto;
+    text-indent: 25px;
+}
+
+table {
+    width: 40vw;
+    text-align: center;
+    margin:0 auto;
+    border: 2px solid black;
+    margin-bottom: 10px;
+}
+
+th {
+    border: 2px solid black;
+    font-weight: bolder;
+}
+
+td {
+    border: 2px solid black;
+}
+
+#experience-wrapper {
+    padding-top: 25px;
+}
+
+#experience-wrapper h2{
+    font-size: 2em;
+    text-align: center;
+}
+
+#experience-list {
+    text-align: center;
+    list-style-type: none;
+}
+
+#experience-list li {
+    display: inline-flex;
+    margin: 15px;
+}
+
+.experience-pic-wrapper {
+    /* filter: grayscale(100%); */
+    width: 100%;
+    height: 175px;
+    /* background-image: url('https://images.pexels.com/photos/3082719/pexels-photo-3082719.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'); */
+    background-size: cover;
+    
+}
+
+.experience-pic-wrapper:hover {
+    filter: grayscale(0%);
+}
+
+.experience-wrapper {
+    width: 250px;
+    height: 300px;
+    border: 1px solid black;
+    -webkit-box-shadow: 0px 0px 48px 20px rgba(0,0,0,0.27); 
+box-shadow: 0px 0px 48px 20px rgba(0,0,0,0.27);
+    /* border-radius: 25px; */
+}
+
+#connect-wrapper h2 {
+    text-align: center;
+}
+
+#connect-list {
+    list-style-type: none;
+    text-align: center;
+}
+
+#connect-list li {
+    display: inline;
+    margin: 0 7vw;
+}
+
+#connect-list li a {
+    font-size: 2.3em;
+    color: black;
+    transition: all .1s;
+}
+
+/* #connect-list li a:hover {
+    color: red;
+} */
+
+#connect-wrapper form {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.half{
+    width: 30vw;
+    font-size: 1.3em;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    margin-left: -2px;
+    margin-right: -2.5px;
+    text-align: center;
+    margin-bottom: 7px;
+}
+
+#fName {
+    border-right: 3px solid black;
+}
+
+.full {
+    width: 60vw;
+    font-size: 1.3em;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    text-align: center;
+    margin-bottom: 7px;
+}
+
+#connect-wrapper form button {
+    width: 60vw;
+    border: 2px solid black;
+    font-size: 4.6 !important;
+    padding: 3px;
+    background-color: white;
+}
+
+#connect-wrapper form button:hover {
+    color: white;
+    background-color: black;
+}
+
+textarea {
+     resize: none;
+     height: 200px;
+     border: 2px solid black !important;
+}
+
+#spirit-selection-wrapper {
+    margin-bottom: 25px;
+}
+
+details p {
+    font-size: 1.2em;
+}
+
+#spirit-selection-wrapper h2{
+    text-align: center;
+}
+
+summary {
+    height: 50px;
+    background-color: black;
+    color: white;
+    margin-bottom: 5px;
+    line-height: 50px;
+    padding-left: 10px;
+    font-size: 2em;
+}
+
+details ul {
+    list-style-type: none;
+}
+
+details li {
+    font-size: 1.3em;
+}
+
+#mobile-menu {
+    width: 100vh;
+    background-color: black;
+    display: none;
+    padding-top: 15vh;
+    z-index: 9999999;
+}
+
+#mobile-menu ul {
+    text-align: center;
+    list-style-type: none;
+}
+
+#mobile-menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+}
+
+
+
+
+
+
+/* Media Queries */
+
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    ul {
+        padding: 0;
+    }
+
+    header nav a:first-child {
+        display: inline;
+    }
+    header nav a:not(:first-child) {
+        display: none;
+    }
+    #about-wrapper {
+        padding-top: 30px;
+    }
+    #about-wrapper h2 {
+        font-size: 1.6em;
+        text-align: center;
+    }
+    #about-wrapper p {
+        font-size: 1em;
+        
+    }
+
+    table {
+        width: 95vw;
+    }
+
+    .experience-wrapper {
+        width: 90vw;
+    }
+
+    .half {
+        width: 45vw;
+    }
+
+    .full {
+        width: 90vw;
+    }
+
+    #connect-wrapper form button {
+        width: 90vw;
+        
+    }
+
+    #welcome-details details{
+        font-size: .6em;
+    }
+
+    #welcome-details p {
+        font-size: 2em;
+    }
+
+    #welcome-details table td, #welcome-details table th {
+        font-size: 2em;
+    }
+
+    #welcome-pic {
+        background-image: url('http://orlandocityliving.com/wp-content/uploads/2015/08/Skyhouse_Orlando-watermarked.jpg');
+    }
+
+    header {
+        display: none;
+    }
+
+    .header {
+        width: 100vw;
+        text-align: center;
+    }
+
+    .header img {
+        height: 70px;
+        margin: auto;
+    }
+    
+}
+
