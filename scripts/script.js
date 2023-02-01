@@ -22,3 +22,11 @@ $('#toggle-responsive').click(function(e) {
     $('#mobile-menu').toggle();
     
 })
+
+var menuItems = document.getElementsByClassName('experience-wrapper');
+
+for(var i = 0; i < menuItems.length; i++) {
+    menuItems[i].addEventListener('click', function(e) {
+        console.log(e.currentTarget)
+    })
+}
